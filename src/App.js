@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import './App.css';
 
 import Header from './components/Header';
-import Caption from './components/Caption';
+import Card from './components/Card';
 
 class App extends Component {
 
@@ -10,7 +10,9 @@ class App extends Component {
     return (
       <div>
         <Header />
-        <Caption />
+        <div className="card">
+          <Card />
+        </div>
       </div>
     );
   }

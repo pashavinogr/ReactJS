@@ -1,9 +1,9 @@
 import React from 'react';
-import './Caption.css';
+import './Card.css';
 
-const caption = () => {
+const Card = () => {
     return (
-        <div className="Caption">
+        <div className="Card">
             <h3>Caption</h3>
             <hr/>
             <p>Some text here...</p>
@@ -11,4 +11,4 @@ const caption = () => {
     );
 }
 
-export default caption;
+export default Card;
