@@ -1,0 +1,19 @@
+.Card {
+    border: 2px solid rgb(0, 228, 19);
+    box-shadow: 0 3px 5px rgba(0, 209, 18, 0.521);
+    text-align: left;
+}
+.bold {
+    font-weight: bold;
+}
+.textMarg {
+    margin: 10px;
+}
+.topRight {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.green {
+    color: green;
+}
