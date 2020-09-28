@@ -7,13 +7,36 @@
     font-weight: bold;
 }
 .textMarg {
-    margin: 10px;
+    margin: 10px 45px 10px 10px;
 }
 .topRight {
     position: absolute;
-    right: 10px;
-    top: 10px;
+    right: 7px;
+    top: 7px;
 }
 .green {
     color: green;
+}
+.blue {
+    color: blue!important;
+    cursor: pointer;
+}
+.red {
+    color: red;
+    cursor: pointer;
+}
+.block {
+    position: relative;
+    word-break: break-all;
+}
+.solidBorder {
+    display: flexbox;
+    word-break: break-all;
+}
+p {
+    margin: 0;
+}
+input {
+    cursor: pointer;
+    max-width: 95%;
 }
