@@ -9,12 +9,12 @@ class Card extends Component {
         isChecked: false,
         isEdit: false,
         cardData : {
-            Logo: 'Caption',
-            Text: 'Some text here...',
+            logo: 'Caption',
+            text: 'Some text here...',
         },
         tempCardData: {
-            Logo: 'Caption',
-            Text: 'Some text here...'
+            logo: 'Caption',
+            text: 'Some text here...'
         }
     }
     
@@ -48,9 +48,9 @@ class Card extends Component {
                                     <div>
                                         <input 
                                             type="text" 
-                                            placeholder={this.state.cardData.Logo}
-                                            value={this.state.tempCardData.Logo || ''}
-                                            onChange={(event) => this.handleChangeInfo(event, 'Logo')}
+                                            placeholder={this.state.cardData.logo}
+                                            value={this.state.tempCardData.logo || ''}
+                                            onChange={(event) => this.handleChangeInfo(event, 'logo')}
                                         />
                                         <div className="topRight">
                                             <div className="block">
@@ -61,15 +61,15 @@ class Card extends Component {
                                         <hr />
                                         <input 
                                             type="text" 
-                                            placeholder={this.state.cardData.Text}
-                                            value={this.state.tempCardData.Text || ''} 
-                                            onChange={(event) => this.handleChangeInfo(event, 'Text')}
+                                            placeholder={this.state.cardData.text}
+                                            value={this.state.tempCardData.text || ''} 
+                                            onChange={(event) => this.handleChangeInfo(event, 'text')}
                                         />
                                     </div>
                                 ) :
                                 (
                                     <div>
-                                        <p className="bold">{this.state.cardData.Logo}</p>
+                                        <p className="bold">{this.state.cardData.logo}</p>
                                         <div className="topRight">
                                             <div className="block">
                                                 <BsPencil className="blue" onClick={this.changeEditStatus} />
@@ -77,7 +77,7 @@ class Card extends Component {
                                             </div>
                                         </div>
                                         <hr />
-                                        <p>{this.state.cardData.Text}</p>
+                                        <p>{this.state.cardData.text}</p>
                                     </div>
                                 )
                             }
